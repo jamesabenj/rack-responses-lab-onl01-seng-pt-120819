@@ -10,7 +10,6 @@ class Application
       morning.write
     else
       afternoon.write
-      binding.pry
     end
   end
 end
