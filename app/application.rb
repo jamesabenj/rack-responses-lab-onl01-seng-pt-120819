@@ -1,3 +1,4 @@
+require 'pry'
 class Application
   def call(env)
     resp = Rack::Response.new
@@ -8,7 +9,7 @@ class Application
     time = Time.now
     if time < 12
       morning.write
-    else 
+    else
       afternoon.write
       binding.pry
     end
