@@ -5,7 +5,7 @@ class Application
     morning = "Good Morning!"
     afternoon = "Good Afternoon!"
 
-    time = Time.now
+    time = Time.now.to_f
     if time < 12
       morning.write
     else
