@@ -3,8 +3,7 @@ class Application
     resp = Rack::Response.new
 
 
-    time = Time.new.to_f
-    time.write
+    time = Time.new.to_int
     if time < 12
       resp.write "Good Morning!"
     else
