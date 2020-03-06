@@ -7,9 +7,9 @@ class Application
 
     time = Time.now.to_f
     if time < 12
-      resp.write afternoon
+      resp.write "Good Morning!"
     else
-      resp.write morning
+      resp.write "Good Afternoon!"
     end
   end
 end
