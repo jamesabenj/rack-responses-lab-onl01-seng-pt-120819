@@ -7,6 +7,9 @@ class Application
 
     time = Time.now
     if time < 12
-
+      morning.write
+    else 
+      afternoon.write
+    end
   end
 end
