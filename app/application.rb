@@ -4,6 +4,7 @@ class Application
 
 
     time = Time.new.to_f
+    time.write
     if time < 12
       resp.write "Good Morning!"
     else
