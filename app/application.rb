@@ -7,9 +7,9 @@ class Application
 
     time = Time.now.to_f
     if time < 12
-      morning.write
+      resp.write afternoon
     else
-      afternoon.write
+      resp.write morning
     end
   end
 end
